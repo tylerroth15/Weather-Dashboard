@@ -153,7 +153,5 @@ $(document).ready(function () {
   for (var i = 0; i < history.length; i++) {
     makeRow(history[i]);
   }
-  //add elements to html
-  //current weather conditions
-  //temp, wind speed, humidity, uv index (diff function)
+  
 });
