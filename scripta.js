@@ -23,7 +23,7 @@ $(document).ready(function () {
     $.ajax({
       type: "GET",
       url:
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         searchValue +
         "&appid=609f8a0cd5875e50496bbad3b9bdc69e&units=imperial",
       dataType: "json",
@@ -52,7 +52,7 @@ $(document).ready(function () {
         var cardBody = $("<div>").addClass("card-body");
         var img = $("<img>").attr(
           "src",
-          "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png"
+          "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png"
         );
 
         title.append(img);
@@ -71,7 +71,7 @@ $(document).ready(function () {
     $.ajax({
       type: "GET",
       url:
-        "http://api.openweathermap.org/data/2.5/forecast?q=" +
+        "https://api.openweathermap.org/data/2.5/forecast?q=" +
         searchValue +
         "&appid=609f8a0cd5875e50496bbad3b9bdc69e&units=imperial",
       dataType: "json",
@@ -95,7 +95,7 @@ $(document).ready(function () {
 
             var img = $("<img>").attr(
               "src",
-              "http://openweathermap.org/img/w/" +
+              "https://openweathermap.org/img/w/" +
                 data.list[i].weather[0].icon +
                 ".png"
             );
@@ -120,7 +120,7 @@ $(document).ready(function () {
     $.ajax({
       type: "GET",
       url:
-        "http://api.openweathermap.org/data/2.5/uvi?appid=609f8a0cd5875e50496bbad3b9bdc69e&lat=" +
+        "https://api.openweathermap.org/data/2.5/uvi?appid=609f8a0cd5875e50496bbad3b9bdc69e&lat=" +
         lat +
         "&lon=" +
         lon,
